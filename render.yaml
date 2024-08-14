@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: darkcoin-app
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase: your-database-name

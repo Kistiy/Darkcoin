@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkCoin App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Элемент для отображения курса -->
+        <div id="rateDisplay" class="rate-display"></div>
+
+        <div class="login-container">
+            <input type="text" id="fromAccount" placeholder="Account Number">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+
+        <div class="transfer-container">
+            <input type="text" id="toAccount" placeholder="Recipient Account Number">
+            <input type="number" id="amount" placeholder="Amount">
+            <button onclick="transfer()">Transfer</button>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
